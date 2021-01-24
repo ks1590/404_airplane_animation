@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* animation: bg-move 10s ease 1s infinite; */
 }
 
 .cloud1,
@@ -43,25 +44,25 @@
 }
 
 .airplane {
-  height: 170px;
+  height: 200px;
   animation: airplane 2s ease infinite alternate;
 }
 
 .preload h3 {
   position: absolute;
-  top: 80%;
+  top: 70%;
   transform: translateY(-75%);
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
   font-family: sans-serif;
 }
 
 @keyframes airplane {
   from {
-    transform: translateY(0px);
+    transform: translateY(-60px);
   }
   to {
-    transform: translateY(80px);
+    transform: translateY(20px);
   }
 }
 
@@ -73,4 +74,13 @@
     right: 130%;
   }
 }
+
+/* @keyframes bg-move{
+  0%{background: #61c5ff;}
+  20%{background: #f3eea2;}
+  40%{background: #ffe866;}
+  60%{background: #f7b843;}
+  80%{background: #f0a340;}
+  100%{background: #445763;}
+} */
 
